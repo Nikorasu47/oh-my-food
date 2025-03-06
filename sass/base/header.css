@@ -1,0 +1,34 @@
+header {
+  margin: none;
+  padding: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header .header__return {
+  position: absolute;
+  left: 10px;
+  height: 10px;
+  color: black;
+}
+header .header__img {
+  display: flex;
+  justify-content: center;
+  max-height: 383px;
+}
+header .header__img .header__img--logo {
+  width: 197px;
+  display: flex;
+}
+
+@media (min-width: 710px) {
+  header {
+    max-height: 383px;
+  }
+  .header__img {
+    size-adjust: 100% 383px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 383px;
+  }
+}/*# sourceMappingURL=header.css.map */

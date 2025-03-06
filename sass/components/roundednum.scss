@@ -1,0 +1,108 @@
+$font-num :"Roboto",serif;
+
+
+.fonct{
+    margin: 10px;
+    gap: 10px;
+    width: 100%;
+
+    .fonct--round {
+        display: flex;
+        flex-direction: column;
+
+        margin: 10px;
+        gap: 10px;
+        width: 100%;
+        .fonct--rounded{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            
+            
+            gap: 10px;
+       
+            
+            
+        
+            .fonct--rounded__text{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            
+                width: 322.5px;
+                height: 72.4px;
+                gap: 20px;
+
+                
+                border-radius: 20px;
+
+            
+                background-color: #f6f6f6;
+                color: rgb(0, 0, 0);
+                
+            .fa-solid{
+                color: var(--primary-color);
+            }
+
+            position: relative ;
+            box-shadow: 0px 4px 15px 0px #00000026;
+
+
+
+            }      
+            .fonct--rounded__num{
+                display: flex;
+
+                font-family: $font-num;
+                border: 1px solid var(--primary-color);
+
+                border-radius: 2em;
+            
+
+                background-color: var(--primary-color);
+                color: blanchedalmond;
+
+                height: 20px;
+                width: 20px;
+
+                align-items: center;
+                justify-content: center;
+
+                position: absolute;
+                left: 0;
+
+                transform: translate(-50%);
+
+                
+
+                
+            }
+            
+        }
+        
+    }
+}
+@media (min-width: 710px) {
+    .fonct{
+        width: 100%;
+        margin: auto;
+    
+        .fonct--round{
+            
+            
+            flex-direction: row;
+            
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 25px;
+            
+            
+        }
+    }
+       
+   }

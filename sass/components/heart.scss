@@ -1,0 +1,57 @@
+
+$trans-time:400ms;
+
+
+
+
+.heart{
+    position: absolute ;
+    height: 22px;
+    width: 21px;
+    display: inline-block;
+    box-sizing: border-box;
+
+    
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    transform: scale(1.6);
+    .fa-heart{
+        size: 200%;
+        size-adjust: 200%;
+    }
+   
+    
+        .fa-heart--red{
+            
+            transition: all $trans-time ease-in-out;
+            
+            opacity: 0;
+            &:hover{
+                color: var(--primary-color);
+                opacity: 1;
+            }
+        }
+        .fa-heart--blc{
+            
+            transition: all $trans-time ease-in-out;
+            position: absolute;    
+            opacity: 1;
+            background-color: transparent;
+            &:hover{
+                opacity: 0;
+            }
+        }
+}    
+
+
+        
+    
+        
+    
+
+                
+
+

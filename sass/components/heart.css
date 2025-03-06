@@ -1,0 +1,32 @@
+.heart {
+  position: absolute;
+  height: 22px;
+  width: 21px;
+  display: inline-block;
+  box-sizing: border-box;
+  right: 25px;
+  bottom: 25px;
+  z-index: 2;
+  transform: scale(1.6);
+}
+.heart .fa-heart {
+  size: 200%;
+  size-adjust: 200%;
+}
+.heart .fa-heart--red {
+  transition: all 400ms ease-in-out;
+  opacity: 0;
+}
+.heart .fa-heart--red:hover {
+  color: var(--primary-color);
+  opacity: 1;
+}
+.heart .fa-heart--blc {
+  transition: all 400ms ease-in-out;
+  position: absolute;
+  opacity: 1;
+  background-color: transparent;
+}
+.heart .fa-heart--blc:hover {
+  opacity: 0;
+}/*# sourceMappingURL=heart.css.map */

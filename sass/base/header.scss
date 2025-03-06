@@ -1,0 +1,53 @@
+header {
+
+    margin: none;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+    
+    
+   
+    .header__return{
+
+      position: absolute;
+      left: 10px;
+      height: 10px;
+      color: black;
+
+    }
+    .header__img {
+      display: flex;
+      justify-content: center;
+      max-height: 383px;
+      
+
+     
+    
+  
+       .header__img--logo {
+          width: 197px;
+          
+          display: flex;
+          
+      }
+  
+    }
+  
+  }
+
+  @media (min-width: 710px) {
+    header{
+      max-height: 383px;
+      
+    }
+    .header__img{
+      size-adjust: 100% 383px;
+      object-fit: cover;
+     
+      max-height: 383px;
+    }
+
+}

@@ -1,0 +1,61 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background-color: rgb(59, 59, 59);
+    color: white;
+
+    padding: 20px;
+
+    .footer--logo{
+        
+        font-family: Shrikhand, cursive;
+        font-weight: lighter;
+        font-size: 16px;
+        
+       
+    }
+
+    .footer--link{
+
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 16px;
+
+        
+        .footer--icon{
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
+
+    }    
+
+}
+
+@media (min-width: 710px) {
+        footer{
+
+            max-width: 1440px;
+            
+            flex-direction: row-reverse;
+            gap: 75px;
+
+            padding-top: 50px;
+
+            .footer--link{
+
+                
+                flex-direction: row;
+                gap: 25px;
+                
+        
+                
+                
+        
+            }    
+
+        }
+   }

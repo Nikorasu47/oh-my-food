@@ -1,0 +1,132 @@
+.menu__title{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 400px;
+    align-items: center;
+    #heart__size{
+        position: absolute;
+        right: 25px;
+        bottom: 5px;
+    }
+  
+}
+
+.fonct-menu{
+    background-color: var(--bg-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    position: relative;
+    margin-top: 30px;
+
+    width: 100%;
+
+    z-index: 100px;
+    padding-top: 20px;
+    gap:10 px;
+   
+    .menu__txt--title{
+        
+        font-family: var(--font-title);
+        font-size: 28px;
+        font-weight: 400;
+        
+    }
+    
+
+    .EPD{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-top: 20px;
+        margin-bottom: 15px;
+        gap: 15px;
+
+            
+        .menu__part{
+            border-bottom: 3px solid var(--tertiary-color);
+            width: 40px;
+    
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .EPD__thumb{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-sizing: border-box;
+            background-color: white;
+            position: relative;
+    
+            height: 69px;
+            width: 96%;
+            padding: 15px;
+            margin-top: 0px;
+            
+            
+            border-radius: 15px;
+            
+            
+            box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+
+            
+
+    
+            
+    
+            .EPD__thumb--text{
+                display: flex;
+                flex-direction: column; 
+                    
+                width: 100%;
+                margin: 0px;
+                padding: 2px;
+                
+                .name{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                .description{
+                    font-size: 15px;
+                }
+    
+            }
+            .EPD__thumb--price {
+                font-weight: 400;
+                padding-top: 20px;
+
+    
+            }
+        }
+    }
+
+   
+    
+}
+
+
+@media (min-width: 710px) {
+    .fonct-menu{
+        max-width: 1055px;
+        
+        gap: 40px;
+        
+
+        .EPD{
+            width: 690px;
+        }
+        
+
+    }
+
+}
+
+width: 80px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
