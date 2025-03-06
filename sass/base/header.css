@@ -4,12 +4,13 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
-header .header__return {
+header .left-arrow {
   position: absolute;
-  left: 10px;
-  height: 10px;
+  left: 20px;
   color: black;
+  transform: scale(1.6);
 }
 header .header__img {
   display: flex;
@@ -24,6 +25,7 @@ header .header__img .header__img--logo {
 @media (min-width: 710px) {
   header {
     max-height: 383px;
+    width: 100%;
   }
   .header__img {
     size-adjust: 100% 383px;

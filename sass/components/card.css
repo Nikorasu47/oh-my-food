@@ -29,6 +29,8 @@
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .rest--box .card .card--a .card--a__text {
   display: flex;

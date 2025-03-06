@@ -14,11 +14,12 @@
 
 .fonct-menu{
     background-color: var(--bg-color);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    
 
     position: relative;
-    margin-top: 30px;
+
+    margin: 0;
+    
 
     width: 100%;
 
@@ -115,6 +116,13 @@
         max-width: 1055px;
         
         gap: 40px;
+
+        margin-top: 30px;
+
+        margin: auto;
+
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
         
 
         .EPD{
@@ -126,7 +134,3 @@
 
 }
 
-width: 80px;
-white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;

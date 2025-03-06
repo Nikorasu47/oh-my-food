@@ -13,10 +13,8 @@
 
 .fonct-menu {
   background-color: var(--bg-color);
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
   position: relative;
-  margin-top: 30px;
+  margin: 0;
   width: 100%;
   z-index: 100px;
   padding-top: 20px;
@@ -78,6 +76,10 @@
   .fonct-menu {
     max-width: 1055px;
     gap: 40px;
+    margin-top: 30px;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
   .fonct-menu .EPD {
     width: 690px;

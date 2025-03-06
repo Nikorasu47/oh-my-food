@@ -15,12 +15,13 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
-header .header__return {
+header .left-arrow {
   position: absolute;
-  left: 10px;
-  height: 10px;
+  left: 20px;
   color: black;
+  transform: scale(1.6);
 }
 header .header__img {
   display: flex;
@@ -35,6 +36,7 @@ header .header__img .header__img--logo {
 @media (min-width: 710px) {
   header {
     max-height: 383px;
+    width: 100%;
   }
   .header__img {
     size-adjust: 100% 383px;
@@ -129,6 +131,8 @@ footer .footer--link .footer--icon {
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .rest--box .card .card--a .card--a__text {
@@ -275,10 +279,8 @@ footer .footer--link .footer--icon {
 
 .fonct-menu {
   background-color: var(--bg-color);
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
   position: relative;
-  margin-top: 30px;
+  margin: 0;
   width: 100%;
   z-index: 100px;
   padding-top: 20px;
@@ -348,12 +350,23 @@ footer .footer--link .footer--icon {
   .fonct-menu {
     max-width: 1055px;
     gap: 40px;
+    margin-top: 30px;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
   .fonct-menu .EPD {
     width: 690px;
   }
 } 
 /**************Généralitée*************/
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 /** direction**/
 .colunm {
   display: flex;
@@ -439,14 +452,11 @@ main {
 }
 
 @media (min-width: 710px) {
-  html {
-    max-width: 1440px;
-  }
   body {
     max-width: 1440px;
   }
-  main {
-    max-width: 1440px;
+  body a {
+    max-width: 100%;
   }
   h2 {
     padding: 0% 13.5%;
