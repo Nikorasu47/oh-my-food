@@ -26,6 +26,8 @@
     z-index: 100px;
     padding-top: 20px;
     gap:10 px;
+
+    
    
     .menu__txt--title{
         
@@ -34,7 +36,8 @@
         font-weight: 400;
         
     }
-    
+
+
 
     .EPD{
     
@@ -46,6 +49,12 @@
         margin-bottom: 15px;
         gap: 15px;
 
+        
+        
+        
+        
+        
+        
             
         .menu__part{
             border-bottom: 3px solid var(--tertiary-color);
@@ -87,13 +96,25 @@
                 width: 100%;
                 margin: 0px;
                 padding: 2px;
+
+                text-wrap: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                
+                
                 
                 .name{
                     font-weight: 500;
                     font-size: 18px;
+                    text-wrap: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
                 .description{
                     font-size: 15px;
+                    text-wrap: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
     
             }
@@ -101,7 +122,7 @@
                 font-weight: 400;
                 padding-top: 20px;
 
-    
+                
             }
         }
     }
@@ -109,8 +130,94 @@
    
     
 }
+/**animation**/
 
+.menu{
+    :nth-child(2){
+        animation-duration: 1s;
+        animation-name: appar ;
+    }
+    :nth-child(3){
+        animation-duration: 2s;
+        animation-name: appar ;
+    }
+    :nth-child(4){
+        animation-duration: 3s;
+        animation-name: appar ;
+    }
 
+    
+}
+
+.EPD__thumb{
+    .fa-bell {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+
+        color: #c8c805;
+        
+        
+        transform: scale(2) translate(200%) ;
+        opacity: 0 !important;
+        
+    }
+   
+
+    &:hover{
+        .EPD__thumb--price{
+           
+            animation: translate 1s forwards;
+            
+
+        }
+            
+        
+        .fa-bell {     
+            transition-duration: 1s ;
+            opacity: 1!important;
+            transform:  scale(2) translate(0%);
+            
+
+        }
+    }
+   
+
+}
+ /**keyframe**/
+ 
+    
+ 
+@keyframes translate {
+            
+    from {
+        
+        width: 27px;
+     
+    }
+    
+  
+    to {
+        
+        width: 100px;
+    }
+}
+@keyframes appar {
+        
+    from {
+      opacity: 0;
+     
+    }
+    70%{
+        opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+/**mediaqueries**/
 @media (min-width: 710px) {
     .fonct-menu{
         max-width: 1055px;

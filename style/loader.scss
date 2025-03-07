@@ -1,17 +1,62 @@
+.column{
+    
+    filter: blur(5px);
+    animation: loadingg 3s forwards;
+}
 .loader-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+    width: 100vw;
+    
+    z-index: 200;
+    opacity: 1;
+    animation: loading 3s forwards;
+    
+}
+
+@keyframes loading{
+    from{
+        opacity: 1;
+        
+    }
+
+    to{
+        display: none;
+        
+    }
+
+}
+@keyframes loadingg{
+    from{
+        
+        filter: blur(5px);
+        
+    }
+    98%{
+        filter: blur(5px);
+    }
+
+    to{
+        filter: blur(0);
+        
+    }
 }
 
 .flipping-cards {
     display: flex;
     justify-content: space-between;
     width: 250px;
+    
 }
 
-.card {
+.cards {
     width: 150px;
     height: 40px;
     background-color: #c43916d7;
@@ -77,10 +122,7 @@
 }
 
 @media (min-width:720px) {
-    .loader-container {
-        
-        height: 80vh;
-    }
+    
     
     .flipping-cards {
        
