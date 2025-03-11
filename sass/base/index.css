@@ -8,20 +8,51 @@
   --bg-color: #F6F6F6;
 }
 
+.column {
+  filter: blur(5px);
+  animation: loadingg 3s forwards;
+}
+
 .loader-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 200;
+  opacity: 1;
+  animation: loading 3s forwards;
 }
 
+@keyframes loading {
+  from {
+    opacity: 1;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes loadingg {
+  from {
+    filter: blur(5px);
+  }
+  98% {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
 .flipping-cards {
   display: flex;
   justify-content: space-between;
   width: 250px;
 }
 
-.card {
+.cards {
   width: 150px;
   height: 40px;
   background-color: rgba(196, 57, 22, 0.8431372549);
@@ -86,9 +117,6 @@
   }
 }
 @media (min-width: 720px) {
-  .loader-container {
-    height: 80vh;
-  }
   .flipping-cards {
     width: 500px;
   }
@@ -426,10 +454,16 @@ footer .footer--link .footer--icon {
 .fonct-menu .EPD .EPD__thumb .EPD__thumb--text .name {
   font-weight: 500;
   font-size: 18px;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .fonct-menu .EPD .EPD__thumb .EPD__thumb--text .description {
   font-size: 15px;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .fonct-menu .EPD .EPD__thumb .EPD__thumb--price {
@@ -439,17 +473,17 @@ footer .footer--link .footer--icon {
 
 /**animation**/
 .menu :nth-child(2) {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: appar;
 }
 
 .menu :nth-child(3) {
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-name: appar;
 }
 
 .menu :nth-child(4) {
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-name: appar;
 }
 
@@ -463,8 +497,7 @@ footer .footer--link .footer--icon {
 }
 
 .EPD__thumb:hover .EPD__thumb--price {
-  transition-duration: 1s;
-  transform: translate(-200%);
+  animation: translate 1s forwards;
 }
 
 .EPD__thumb:hover .fa-bell {
@@ -474,24 +507,19 @@ footer .footer--link .footer--icon {
 }
 
 /**keyframe**/
-@keyframes blocks {
-  from {
-    display: hidden;
-  }
-  to {
-    display: block;
-  }
-}
 @keyframes translate {
   from {
-    transform: translateX(0%);
+    width: 27px;
   }
   to {
-    transform: translateX(-200%);
+    width: 100px;
   }
 }
 @keyframes appar {
   from {
+    opacity: 0;
+  }
+  70% {
     opacity: 0;
   }
   to {

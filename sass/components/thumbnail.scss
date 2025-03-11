@@ -4,7 +4,7 @@
     position: relative;
     width: 400px;
     align-items: center;
-    #heart__size{
+    .heart__size{
         position: absolute;
         right: 25px;
         bottom: 5px;
@@ -134,15 +134,15 @@
 
 .menu{
     :nth-child(2){
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-name: appar ;
     }
     :nth-child(3){
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-name: appar ;
     }
     :nth-child(4){
-        animation-duration: 3s;
+        animation-duration: 1.5s;
         animation-name: appar ;
     }
 
@@ -209,7 +209,10 @@
      
     }
     70%{
-        opacity: 0;
+        opacity: 0.2;
+    }
+    90%{
+        opacity: 0.7;
     }
   
     to {
