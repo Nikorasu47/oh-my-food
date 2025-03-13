@@ -9,10 +9,6 @@
   z-index: 2;
   transform: scale(1.6);
 }
-.heart .fa-heart {
-  size: 200%;
-  size-adjust: 200%;
-}
 .heart .fa-heart--red {
   transition: all 400ms ease-in-out;
   opacity: 0 !important;

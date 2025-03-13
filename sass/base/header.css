@@ -1,6 +1,6 @@
 header {
-  margin: none;
-  padding: none;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -28,7 +28,6 @@ header .header__img .header__img--logo {
     width: 100%;
   }
   .header__img {
-    size-adjust: 100% 383px;
     -o-object-fit: cover;
        object-fit: cover;
     max-height: 383px;
