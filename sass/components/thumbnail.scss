@@ -75,8 +75,8 @@
     
             height: 69px;
             width: 96%;
-            padding: 15px;
-            margin-top: 0px;
+            padding: 0px;
+            margin-top: 15px;
             
             
             border-radius: 15px;
@@ -94,8 +94,8 @@
                 flex-direction: column; 
                     
                 width: 100%;
-                margin: 0px;
-                padding: 2px;
+                margin: 12px;
+                padding-left: 6px;
 
                 text-wrap: nowrap;
                 text-overflow: ellipsis;
@@ -109,6 +109,7 @@
                     text-wrap: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
+                    padding-bottom: 8px;
                 }
                 .description{
                     font-size: 15px;
@@ -120,7 +121,8 @@
             }
             .EPD__thumb--price {
                 font-weight: 400;
-                padding-top: 20px;
+                padding-top: 40px;
+                margin-right: 8px;
 
                 
             }
@@ -150,15 +152,21 @@ main{
 }
 
 .EPD__thumb{
-    .fa-bell {
-        position: absolute;
-        top: 25px;
-        right: 30px;
+    .fa-circle-check {
+        
+        display:flex;
+       
 
-        color: #c8c805;
+        color: white;
+        width: 0px;
+        height: 100%;
+
+        align-items: center;
+        justify-content: center;
+        
+                
         
         
-        transform: scale(2) translate(200%) ;
         opacity: 0 !important;
         
     }
@@ -173,10 +181,16 @@ main{
         }
             
         
-        .fa-bell {     
+        .fa-circle-check {     
             transition-duration: 1s ;
             opacity: 1!important;
-            transform:  scale(2) translate(0%);
+           
+            background-color: #99E2D0;
+            width: 70px;
+            height: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+           
             
 
         }
@@ -199,7 +213,7 @@ main{
   
     to {
         
-        width: 100px;
+        width: 70px;
     }
 }
 @keyframes appar {

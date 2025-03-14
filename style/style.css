@@ -9,7 +9,7 @@
   --bg-color: #F6F6F6;
 }
 
-.column {
+.flou {
   filter: blur(5px);
   animation: loadingg 3s forwards;
 }
@@ -138,7 +138,7 @@ header .left-arrow {
   position: absolute;
   left: 20px;
   color: black;
-  transform: scale(1.6);
+  transform: scale(1.1);
 }
 header .header__img {
   display: flex;
@@ -429,8 +429,8 @@ footer .footer--link .footer--icon {
   position: relative;
   height: 69px;
   width: 96%;
-  padding: 15px;
-  margin-top: 0px;
+  padding: 0px;
+  margin-top: 15px;
   border-radius: 15px;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
@@ -439,8 +439,8 @@ footer .footer--link .footer--icon {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0px;
-  padding: 2px;
+  margin: 12px;
+  padding-left: 6px;
   text-wrap: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -452,6 +452,7 @@ footer .footer--link .footer--icon {
   text-wrap: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-bottom: 8px;
 }
 
 .fonct-menu .EPD .EPD__thumb .EPD__thumb--text .description {
@@ -463,7 +464,8 @@ footer .footer--link .footer--icon {
 
 .fonct-menu .EPD .EPD__thumb .EPD__thumb--price {
   font-weight: 400;
-  padding-top: 20px;
+  padding-top: 40px;
+  margin-right: 8px;
 }
 
 /**animation**/
@@ -482,12 +484,13 @@ main :nth-child(4) {
   animation-name: appar;
 }
 
-.EPD__thumb .fa-bell {
-  position: absolute;
-  top: 25px;
-  right: 30px;
-  color: #c8c805;
-  transform: scale(2) translate(200%);
+.EPD__thumb .fa-circle-check {
+  display: flex;
+  color: white;
+  width: 0px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   opacity: 0 !important;
 }
 
@@ -495,10 +498,14 @@ main :nth-child(4) {
   animation: translate 1s forwards;
 }
 
-.EPD__thumb:hover .fa-bell {
+.EPD__thumb:hover .fa-circle-check {
   transition-duration: 1s;
   opacity: 1 !important;
-  transform: scale(2) translate(0%);
+  background-color: #99E2D0;
+  width: 70px;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /**keyframe**/
@@ -507,7 +514,7 @@ main :nth-child(4) {
     width: 27px;
   }
   to {
-    width: 100px;
+    width: 70px;
   }
 }
 @keyframes appar {

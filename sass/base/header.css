@@ -10,7 +10,7 @@ header .left-arrow {
   position: absolute;
   left: 20px;
   color: black;
-  transform: scale(1.6);
+  transform: scale(1.1);
 }
 header .header__img {
   display: flex;
