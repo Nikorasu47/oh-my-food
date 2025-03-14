@@ -1,7 +1,7 @@
 .flou{
     
     filter: blur(5px);
-    animation: loadingg 3s forwards;
+    animation: loadingg 3s forwards ;
 }
 .loader-container {
     display: flex;
@@ -44,7 +44,7 @@
     }
 
     to{
-        filter: blur(0);
+       filter: none;
         
     }
 }
