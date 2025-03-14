@@ -4,6 +4,7 @@
   width: 21px;
   display: inline-block;
   box-sizing: border-box;
+  cursor: pointer;
   right: 25px;
   bottom: 25px;
   z-index: 2;

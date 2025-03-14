@@ -279,6 +279,7 @@ footer .footer--link .footer--icon {
   width: 21px;
   display: inline-block;
   box-sizing: border-box;
+  cursor: pointer;
   right: 25px;
   bottom: 25px;
   z-index: 2;
@@ -421,6 +422,7 @@ footer .footer--link .footer--icon {
 }
 
 .fonct-menu .EPD .EPD__thumb {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
