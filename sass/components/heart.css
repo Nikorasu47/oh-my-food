@@ -1,7 +1,5 @@
 .heart {
   position: absolute;
-  height: 22px;
-  width: 21px;
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -12,26 +10,18 @@
 }
 .heart .fa-heart--red {
   display: flex;
-  height: 25px;
-  width: 25px;
   z-index: 200;
+  color: transparent;
   transition: all 400ms ease-in-out;
-  background-color: white;
   opacity: 0 !important;
 }
-.heart .fa-heart--red:hover {
-  color: var(--primary-color);
-  opacity: 1 !important;
-  border: none;
-}
 .heart .fa-heart--blc {
-  background-color: white;
   transition: all 400ms ease-in-out;
   position: absolute;
   opacity: 1 !important;
-  background-color: transparent;
 }
-.heart .fa-heart--blc:hover {
-  opacity: 0 !important;
-  border: none;
+.heart:hover .fa-heart {
+  transition: all 400ms ease-in-out;
+  color: var(--primary-color);
+  opacity: 1 !important;
 }/*# sourceMappingURL=heart.css.map */
