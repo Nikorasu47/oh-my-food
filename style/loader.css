@@ -33,7 +33,7 @@
     filter: blur(5px);
   }
   to {
-    filter: blur(0);
+    filter: none;
   }
 }
 .flipping-cards {

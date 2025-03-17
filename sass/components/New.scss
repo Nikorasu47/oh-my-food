@@ -1,0 +1,21 @@
+.new {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+
+    height: 29px;
+    width: 80px;
+
+    background-color: aquamarine;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    .new_text{
+        font-size: 14px;
+        font-weight: 500px;
+        color: black;
+    }
+}

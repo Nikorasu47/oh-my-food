@@ -44,7 +44,7 @@
     filter: blur(5px);
   }
   to {
-    filter: blur(0);
+    filter: none;
   }
 }
 .flipping-cards {
@@ -343,7 +343,7 @@ footer .footer--link .footer--icon {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
-.fonct .fonct--round .fonct--rounded .fonct--rounded__text .fa-solid {
+.fonct .fonct--round .fonct--rounded .fonct--rounded__text .fa-store {
   color: var(--primary-color);
 }
 
@@ -546,6 +546,23 @@ main :nth-child(4) {
   .fonct-menu .EPD {
     width: 690px;
   }
+} 
+.new {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  height: 29px;
+  width: 80px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new .new_text {
+  font-size: 14px;
+  font-weight: 500px;
+  color: black;
 } 
 /**************Généralitée*************/
 html {
