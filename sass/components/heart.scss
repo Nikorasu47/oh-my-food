@@ -23,16 +23,28 @@ $trans-time:400ms;
    
     
         .fa-heart--red{
+            display: flex;
+            height: 25px;
+            width: 25px;
+            z-index: 200;
+            
             
             transition: all $trans-time ease-in-out;
+
+            background-color: white;
             
             opacity: 0!important;
             &:hover{
                 color: var(--primary-color);
                 opacity: 1!important;
+                border :none;
             }
         }
         .fa-heart--blc{
+
+            background-color: white;
+            
+            
             
             transition: all $trans-time ease-in-out;
             position: absolute;    
@@ -40,6 +52,7 @@ $trans-time:400ms;
             background-color: transparent;
             &:hover{
                 opacity: 0!important;
+                border: none;
             }
         }
 }    
