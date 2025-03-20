@@ -45,7 +45,7 @@
 .cards {
   width: 150px;
   height: 40px;
-  background-color: rgba(196, 57, 22, 0.8431372549);
+  background: linear-gradient(193.33deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%);
   color: white;
   display: flex;
   justify-content: center;

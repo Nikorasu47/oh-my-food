@@ -184,6 +184,10 @@ footer .footer--link .footer--icon {
   flex-direction: row;
   gap: 8px;
 }
+footer .footer--a {
+  color: white;
+  text-decoration: none;
+}
 
 @media (min-width: 710px) {
   footer {
@@ -489,6 +493,7 @@ main :nth-child(4) {
   height: 100%;
   align-items: center;
   justify-content: center;
+  transition: all 1s;
   opacity: 0 !important;
 }
 
@@ -497,7 +502,6 @@ main :nth-child(4) {
 }
 
 .EPD__thumb:hover .fa-circle-check {
-  transition-duration: 1s;
   opacity: 1 !important;
   background-color: #99E2D0;
   width: 70px;
