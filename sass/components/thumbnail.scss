@@ -164,7 +164,7 @@ main{
 
         align-items: center;
         justify-content: center;
-        
+        transition: all 1s;
                 
         
         
@@ -177,13 +177,12 @@ main{
         .EPD__thumb--price{
            
             animation: translate 1s forwards;
-            
 
         }
             
         
         .fa-circle-check {     
-            transition-duration: 1s ;
+            
             opacity: 1!important;
            
             background-color: #99E2D0;
@@ -192,9 +191,8 @@ main{
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
            
-            
-
         }
+    
     }
    
 
