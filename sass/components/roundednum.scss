@@ -43,9 +43,14 @@ $font-num :"Roboto",serif;
                 background-color: #f6f6f6;
                 color: rgb(0, 0, 0);
                 
-            .fa-store{
-                color: var(--primary-color);
-            }
+            
+                &:hover{
+                    .fa-color{
+                        color: var(--primary-color);
+                    }
+                }
+                
+            
 
             position: relative ;
             box-shadow: 0px 4px 15px 0px #00000026;

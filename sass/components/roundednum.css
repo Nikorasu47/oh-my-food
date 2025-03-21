@@ -31,7 +31,7 @@
   position: relative;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
-.fonct .fonct--round .fonct--rounded .fonct--rounded__text .fa-store {
+.fonct .fonct--round .fonct--rounded .fonct--rounded__text:hover .fa-color {
   color: var(--primary-color);
 }
 .fonct .fonct--round .fonct--rounded .fonct--rounded__num {
